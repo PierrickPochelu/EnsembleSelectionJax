@@ -1,7 +1,7 @@
 # Ensemble Selection with Jax
 High-Performance Ensemble Selection Gradient-Informed with Jax.
 
-Ensemble Selection is described by Caruana et al. 2004. It is a combinatorial optimization problem consisting in extracting the best subset (Ensemble) of models in a bigger library of models. We know that the best ensemble is not made of the best individual model but complementary models canceling out their error. Finding complementary models is a non-trivial problem due to the huge number of potential ensembles (combinations).
+Ensemble Selection problem is described by Caruana et al. 2004. It is a combinatorial optimization problem consisting in extracting the best subset  of models (Ensemble) in a bigger library of models. We know that the best ensemble is not made of the best individual model but complementary models canceling out their error. Finding complementary models is a non-trivial problem due to the huge number of potential ensembles (combinations).
 
 
 For comparison, I compare different designs of Ensemble Selection based on the number of times the ensemble is evaluated in forward or backward. The computing cost of 1 forward is approximatively equal to 1 backward L is the number of models in the library and n is the desired size of the subset (Ensemble) of models.
