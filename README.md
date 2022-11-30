@@ -12,4 +12,4 @@ Greedy with Jax  | O(n) backwards** | 10
 * 1 forward means 'ensemble of models in prediction phase'
 **cost of 1 forward approximatively equal 1 backward
 
-Greedy with Jax is a gradient-informed method much less computing intensive than standard Greedy approach. It is possible to vary n to control the trade-of between prediction quality (accuracy, MSE,...) and prediction speed (e.g. pred-per-second, latency,...) by varying n.
+Greedy with Jax is a gradient-informed method much less computing intensive than standard Greedy approach. For all methods, n controls the trade-of between prediction quality (e.g., accuracy, MSE,...) and speed (ensemble selection time, pred-per-second, prediction latency).
