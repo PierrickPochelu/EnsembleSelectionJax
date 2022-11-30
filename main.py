@@ -21,7 +21,7 @@ def loss(y_pred, y):
     global_loss = jnp.mean(elements_loss)
     return global_loss
 
-
+@jax.jit
 def f(bag_of_models, model_preds, y):
     y_pred = pred(bag_of_models, model_preds)
     l = loss(y_pred, y)
