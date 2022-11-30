@@ -9,8 +9,8 @@ For comparison, I compare different designs of Ensemble Selection based on the n
 Ensemble selection | Complexity | When L=1000 and n=10
 | :--- | ---: | :---:
 Brut force  | O(Combi(n+L-1,L))* forwards | ~2.9e23
-Greedy  | O(n*L) forwards | 10K
-Greedy with Jax  | O(n) backwards | 10
+Greedy gradient-free | O(n*L) forwards | 10K
+Greedy gradient-informed | O(n) backwards | 10
 
 *Combi(n+L-1,L) is the combination with repetition formula. Combination without repetition is given by Combi(a,b)=a!/(b!(b-a)!).
 
