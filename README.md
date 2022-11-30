@@ -9,7 +9,8 @@ Brut force  | O(Combi(L,n)) forwards* | ~2.6e23
 Greedy  | O(n*L) forwards | 10K
 Greedy with Jax  | O(n) backwards** | 10
 
-* 1 forward means 'ensemble of models in prediction phase'
-**cost of 1 forward approximatively equal 1 backward
+*1 forward means 'ensemble of models evaluated in forward phase'
+
+**cost of 1 forward approximatively equal to 1 backward
 
 Greedy with Jax is a gradient-informed method much less computing intensive than standard Greedy approach. For all methods, n controls the trade-of between prediction quality (e.g., accuracy, MSE,...) and speed (ensemble selection time, pred-per-second, prediction latency).
