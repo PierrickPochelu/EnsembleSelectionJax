@@ -12,7 +12,7 @@ Brut force  | O(Combi(n+L-1,L))* forwards | ~2.9e23
 Greedy  | O(n*L) forwards | 10K
 Greedy with Jax  | O(n) backwards | 10
 
-* Combi(n+L-1,L) is the combination with repetition formula. Combination without repetition is given by Combi(a,b)=a!/(b!(b-a)!).
+*Combi(n+L-1,L) is the combination with repetition formula. Combination without repetition is given by Combi(a,b)=a!/(b!(b-a)!).
 
 
 Greedy with Jax is a gradient-informed method much less computing intensive than the standard Greedy approach. For all methods, n controls the trade-off between prediction quality (e.g., accuracy, MSE,...) and speed (ensemble selection time, pred-per-second, prediction latency).
